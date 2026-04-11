@@ -49,19 +49,20 @@
             border-bottom: 1px solid var(--border);
             transition: var(--transition);
         }
-        .nav-links { display: flex; gap: 30px; }
+        .nav-links { display: flex; gap: 20px; }
         .nav-links a { 
             text-decoration: none; 
             color: var(--foreground); 
             font-weight: 500; 
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: var(--transition);
+            white-space: nowrap;
         }
         .nav-links a:hover { color: var(--accent); }
         .logo { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--primary); }
 
         /* Hero */
-        #hero-boas-vindas-ao-cuidado {
+        #home {
             height: 90vh;
             display: flex;
             align-items: center;
@@ -94,7 +95,7 @@
         .cta-button:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); filter: brightness(1.1); }
 
         /* Manifesto */
-        #manifesto-petvida { text-align: center; background: var(--surface-1); }
+        #sobre-nos { text-align: center; background: var(--surface-1); }
         .manifesto-wrap { max-width: 800px; margin: 0 auto; }
         .manifesto-wrap h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 30px; }
         .manifesto-image { 
@@ -107,10 +108,10 @@
         }
 
         /* Services Grid */
-        #ecossistema-de-bem-estar { background: var(--surface-2); }
+        #nossos-servicos { background: var(--surface-2); }
         .section-header { margin-bottom: 60px; text-align: center; }
         .section-header h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
-        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .service-card {
             background: var(--surface-1);
             padding: 0;
@@ -127,7 +128,7 @@
         .service-card h3 { margin-bottom: 15px; color: var(--primary); font-size: 1.4rem; }
 
         /* Team */
-        #maos-que-curam-equipe { background: var(--surface-1); }
+        #equipe { background: var(--surface-1); }
         .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
         .team-card { display: flex; align-items: center; gap: 24px; }
         .team-card img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary); }
@@ -135,7 +136,7 @@
         .team-info p { font-size: 0.95rem; color: var(--muted); }
 
         /* Gallery Masonry */
-        #nosso-refugio-galeria { background: var(--foreground); color: white; }
+        #galeria { background: var(--foreground); color: white; }
         .masonry-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -149,7 +150,7 @@
         .masonry-item:nth-child(2) { grid-column: span 2; }
 
         /* Testimonials */
-        #historias-de-gratidao { background: var(--primary); color: white; text-align: center; }
+        #depoimentos { background: var(--primary); color: white; text-align: center; }
         .testimonial-slider { max-width: 900px; margin: 0 auto; }
         .testimonial-item { padding: 40px; }
         .testimonial-item p { font-size: 1.5rem; font-style: italic; margin-bottom: 30px; line-height: 1.4; }
@@ -157,7 +158,7 @@
         .testimonial-author img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
 
         /* Booking Split */
-        #inicie-a-jornada-agendamento { background: var(--surface-1); }
+        #agendamento { background: var(--surface-1); }
         .split-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
         .booking-form {
             background: var(--surface-2);
@@ -177,7 +178,7 @@
         .booking-image img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); }
 
         /* FAQ */
-        #duvidas-frequentes-faq { background: var(--surface-2); }
+        #faq { background: var(--surface-2); }
         .faq-container { max-width: 800px; margin: 0 auto; }
         .faq-item { background: var(--surface-1); border-radius: 12px; margin-bottom: 15px; border: 1px solid var(--border); overflow: hidden; }
         .faq-question { padding: 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary); }
@@ -185,7 +186,7 @@
         .faq-item.active .faq-answer { padding-bottom: 24px; max-height: 200px; }
 
         /* Location */
-        #onde-estamos-contato { padding: 0; height: 500px; position: relative; }
+        #localizacao { padding: 0; height: 500px; position: relative; }
         .map-overlay {
             position: absolute;
             top: 50%;
@@ -216,7 +217,7 @@
             .masonry-item:nth-child(1), .masonry-item:nth-child(2) { grid-column: span 1; grid-row: span 1; height: 250px; }
             .hero-content h1 { font-size: 2.5rem; }
             .map-overlay { position: relative; top: 0; left: 0; transform: none; max-width: 100%; margin: 20px; }
-            #onde-estamos-contato { height: auto; }
+            #localizacao { height: auto; }
         }
 
         /* Reveal Animations */
